@@ -13,28 +13,34 @@ public class Death_Message_Main {
     Player Name
      */
 
-     /* name of the vehicle
-    */
+     /** 
+     name of the vehicle
+    **/
     private String playerName;
 
-  /*
+    /*
     * Constructor - sets up the values
     * player based
     */
   
-    //sets up the default settings of the tank (Unnamed)
-	  public Death_Message_Main() {
-      //general player information
-      this.playerName = " ";
+    /**
+    sets up the default settings of the super default of the death messages
+    **/
+	 public Death_Message_Main() {
+      		this.playerName = " ";
 	}
 
-    //this sets the name for the main death message
+    /**
+    sets up the default settings of the super default of the death messages
+    **/
 	  public Death_Message_Main(String name){
       // this sets all string variables together
 		this.playerName = name;
     }
   
-		// Method to print out information details
+    /**
+    Method to print out information details
+    **/
     public String toString() {
     String output = "YOU ARE DEAD \n";
     output = output + this.playerName + " died\n";
